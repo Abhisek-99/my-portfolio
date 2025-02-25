@@ -1,0 +1,206 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhisek Chatterjee - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/portfolio2_style.css '%}">
+
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header>
+        <div class="container">
+            
+                <a href="#" class="logo">Alex</a>
+                <nav>
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Education</a>
+                    <a href="#">Experience</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+            <div class="profile-container">
+                <div class="profile-photo">
+                    <img src="{% static 'css/img/abhi.jpg' %}" alt="Abhisek Chatterjee">
+                </div>
+                <div class="profile-info">
+
+                    <div class="home-content">
+                        <h1>Hi, It's <span>Abhisek Chatterjee</span></h1>
+                        <h3 class="typing-text">I'm a <span></span></h3>
+                    
+                    </div>
+
+                    <!-- <h1>Abhisek Chatterjee</h1> -->
+                    <!-- <p>Web Developer & BCA Student</p> -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:abhisek4901@gmail.com">abhisek4901@gmail.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span><a href="#">(+91) 9883054901</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><a href="https://www.google.com/maps/place/Tengua+Bus+Stand/@22.0285978,87.9699963,17z/data=!4m6!3m5!1s0x3a02e5822caac437:0xc405a5fda3e07c75!8m2!3d22.0285978!4d87.9699963!16s%2Fg%2F11hb4_8xbm?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D">West Bengal, India</a></span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a passionate web developer pursuing my Bachelor's in Computer Application at Global Group of Institutions. 
+                   I aim to have a growth-oriented and challenging career where I can contribute my knowledge and skills while 
+                   enhancing my experience through continuous learning and teamwork.</p>
+            </section>
+
+            <section id="skills">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">WordPress</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Other Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MS Excel</span>
+                            <span class="skill-tag">MS Word</span>
+                            <span class="skill-tag">PowerPoint</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="education-card">
+                    <h3>Bachelor in Computer Application (BCA)</h3>
+                    <p>Global Group of Institutions | 2022-2025</p>
+                    <p>Currently pursuing 6th Semester</p>
+                    <div class="sgpa-grid">
+                        <div class="sgpa-item">
+                            <strong>Sem 1</strong>
+                            <p>5.8 SGPA</p>
+                        </div>
+                        <div class="sgpa-item">
+                            <strong>Sem 2</strong>
+                            <p>6.4 SGPA</p>
+                        </div>
+                        <div class="sgpa-item">
+                            <strong>Sem 3</strong>
+                            <p>6.77 SGPA</p>
+                        </div>
+                        <div class="sgpa-item">
+                            <strong>Sem 4</strong>
+                            <p>- SGPA</p>
+                        </div>
+                        <div class="sgpa-item">
+                            <strong>Sem 5</strong>
+                            <p>- SGPA</p>
+                        </div>
+                        <div class="sgpa-item">
+                            <strong>Sem 6</strong>
+                            <p>- SGPA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <h3>Higher Secondary Education</h3>
+                    <p>Durgapur High School | 2021</p>
+                    <p>Percentage: 61.41%</p>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="education-card">
+                    <h3>Web Development Intern</h3>
+                    <p>Euphoria GenX | 3 Months</p>
+                    <p>Worked with Bootstrap 5, PHP, MySQL, and JavaScript technologies.</p>
+                </div>
+            </section>
+            <footer>
+                <p>&copy; 2025 Abhisek Chatterjee. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle i');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                themeToggle.classList.remove('fa-sun');
+                themeToggle.classList.add('fa-moon');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.classList.remove('fa-moon');
+                themeToggle.classList.add('fa-sun');
+            }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight * 0.75) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'all 0.5s ease';
+        });
+    </script>
+</body>
+</html>
